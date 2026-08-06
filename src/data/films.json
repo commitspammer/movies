@@ -164,7 +164,7 @@
   { "title": "Memento", "watched": true, "rating": 7, "id": "tt0209144" },
   {
     "title": "Late Night With The Devil",
-    "watched": false,
+    "watched": true,
     "rating": 7.7,
     "id": "tt14966898"
   },
@@ -437,7 +437,7 @@
     "rating": 6.8,
     "id": "tt0096438"
   },
-  { "title": "Nosferatu", "watched": true, "rating": 7.8, "id": "tt5040012" },
+  { "title": "Nosferatu", "watched": true, "rating": 8.0, "id": "tt5040012" },
   {
     "title": "As Above, So Below",
     "watched": true,

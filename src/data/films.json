@@ -165,7 +165,7 @@
   {
     "title": "Late Night With The Devil",
     "watched": false,
-    "rating": 0,
+    "rating": 7.7,
     "id": "tt14966898"
   },
   { "title": "Goodfellas", "watched": false, "rating": 0, "id": "tt0099685" },
@@ -408,11 +408,11 @@
     "rating": 5.3,
     "id": "tt0163651"
   },
-  { "title": "Hellraiser", "watched": true, "rating": 3.5, "id": "tt0093177" },
+  { "title": "Hellraiser", "watched": true, "rating": 2.5, "id": "tt0093177" },
   {
     "title": "Hellraiser (2022)",
     "watched": true,
-    "rating": 3.5,
+    "rating": 2.5,
     "id": "tt0887261"
   },
   { "title": "The Crow", "watched": true, "rating": 4.5, "id": "tt0109506" },
@@ -437,7 +437,7 @@
     "rating": 6.8,
     "id": "tt0096438"
   },
-  { "title": "Nosferatu", "watched": true, "rating": 7.1, "id": "tt5040012" },
+  { "title": "Nosferatu", "watched": true, "rating": 7.8, "id": "tt5040012" },
   {
     "title": "As Above, So Below",
     "watched": true,
@@ -917,5 +917,6 @@
   { "title": "Forgotten Island", "watched": false, "rating": 0, "id": "tt36583977" },
   { "title": "The Whale", "watched": false, "rating": 0, "id": "tt36583977" },
   { "title": "The Thing", "watched": false, "rating": 0, "id": "tt0084787" },
-  { "title": "The Amazing Digital Circus", "watched": false, "rating": 0, "id": "tt27610198" }
+  { "title": "The Amazing Digital Circus", "watched": false, "rating": 0, "id": "tt27610198" },
+  { "title": "REC", "watched": true, "rating": 7.0, "id": "tt1038988" }
 ]

@@ -1,11 +1,18 @@
 ---
 import { Image } from "astro:assets";
-import imdbResults from "../data/imdbapi.json";
+//import imdbResults from "../data/imdbapi.json";
+import omdbResults from "../data/omdbapi.json";
 import StarRating from "../components/StarRating.astro";
 
 const { id, ranking, title, rating, watched } = Astro.props;
 
-const posterImage = imdbResults.find((r) => r?.id === id)?.primaryImage;
+//const posterImage = imdbResults.find((r) => r?.id === id)?.primaryImage;
+const posterImage = {
+  url: omdbResults.find((r) => r?.imdbID === id)?.Poster,
+  width: 380 * 2,
+  height: 562 * 2,
+};
+posterImage.url = posterImage.url === "N/A" ? undefined : posterImage.url;
 
 const signId = `sign-${id}`;
 const lightsId = `sign-${id}-lights`;

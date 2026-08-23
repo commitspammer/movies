@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FilmSign from "../components/FilmSign.astro";
+import films from "../data/films.json";
+
+const OMDB_API_KEY = "ADD_ME";
+const OMDB_API_URL = `https://www.omdbapi.com/?apikey=${OMDB_API_KEY}`;
+
+const omdbapi = await Promise.all(
+  films.map(async (f) => {
+    try {
+      throw new Error("comment this error-throwing line");
+      // comment line above to fetch api data
+      const res = await fetch(`${OMDB_API_URL}&i=${f.id}`);
+      const data = await res.json();
+      return data;
+    } catch (e) {
+      return { imdbID: f.id, error: e };
+    }
+  }),
+);
+
+const omdbapiJSON = JSON.stringify(omdbapi, null, 2);
+---
+
+<Layout>
+  <div class="px-24 py-12">
+    <div id="poo">{omdbapiJSON}</div>
+  </div>
+</Layout>
+
+<script is:inline define:vars={{ omdbapiJSON }}>
+  const poo = document.getElementById("poo");
+  poo?.addEventListener("click", () => {
+    console.log(omdbapiJSON);
+  });
+</script>

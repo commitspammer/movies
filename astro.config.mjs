@@ -10,5 +10,6 @@ export default defineConfig({
   },
   image: {
     domains: ['m.media-amazon.com'],
+    //layout: 'full-width',
   }
 });

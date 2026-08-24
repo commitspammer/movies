@@ -7,7 +7,7 @@ import StarRating from "../components/StarRating.astro";
 const { id, ranking, title, rating, watched } = Astro.props;
 
 //const posterImage = imdbResults.find((r) => r?.id === id)?.primaryImage;
-const posterImage = {
+let posterImage = {
   url: omdbResults.find((r) => r?.imdbID === id)?.Poster,
   width: 380 * 2,
   height: 562 * 2,

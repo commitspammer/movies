@@ -913,5 +913,6 @@
   { "title": "The Thing", "watched": false, "rating": 0, "id": "tt0084787" },
   { "title": "The Amazing Digital Circus", "watched": false, "rating": 0, "id": "tt27610198" },
   { "title": "REC", "watched": true, "rating": 7.0, "id": "tt1038988" },
-  { "title": "The Ladykillers", "watched": false, "rating": 0, "id": "tt0335245" }
+  { "title": "The Ladykillers", "watched": false, "rating": 0, "id": "tt0335245" },
+  { "title": "Corpse Bride", "watched": false, "rating": 0, "id": "tt0121164" }
 ]
